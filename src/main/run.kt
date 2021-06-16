@@ -1,10 +1,9 @@
 package main
 
-import main.data.GameMap
-import main.graphics.SwingTestWindow
+import main.logic.CellGrid
 
 fun main() {
-    val currentMap = GameMap()
-    currentMap.createNewMap(16,16,32)
+    val currentMap = CellGrid()
+    currentMap.createNewCells(16,16,32)
     SwingTestWindow(currentMap)
 }
